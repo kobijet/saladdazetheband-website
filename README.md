@@ -1,1 +1,1 @@
-"# Salad Daze Band Website"  
+# Salad Daze Band Website
