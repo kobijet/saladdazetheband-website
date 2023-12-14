@@ -1,0 +1,100 @@
+html, body {
+    margin: auto
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 18px;
+    font-family: 'Bitter', serif;
+
+    color: hsl(0, 0%, 100%);
+    background-color: black;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+    color: hsl(0, 100%, 50%);
+    transition: color 0.75s ease-in;
+}
+
+header {
+    width: 75%;
+}
+
+header #logo {
+    height: 8em;
+    display: block;
+    margin: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#album-highlight {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+#album-highlight em {
+    font-weight: 400;
+}
+
+#album-highlight #hero {
+    height: 10em;
+    display: block;
+    margin: auto;
+}
+
+#album-highlight p {
+    text-align: center;
+}
+
+#socials {
+    margin-bottom: 2em;
+}
+
+#socials a {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    text-decoration: none;
+}
+
+#socials img {
+    height: 2em;
+    width: auto;
+}
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+}
+
+@media screen and (min-width: 1300px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 15em;
+    }
+
+    #socials {
+        display: flex;
+    }
+
+    #socials a {
+        display: block;
+        width: 8em;
+        margin-top: 1em;
+        text-align: center;
+    }
+}

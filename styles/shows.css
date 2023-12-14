@@ -1,0 +1,90 @@
+html, body {
+    margin: auto
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 18px;
+    font-family: 'Bitter', serif;
+
+    color: hsl(0, 0%, 100%);
+    background-color: black;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+    color: hsl(0, 100%, 50%);
+    transition: color 0.75s ease-in;
+}
+
+nav .active-link {
+    color: hsl(0, 100%, 50%);
+}
+
+header {
+    width: 75%;
+}
+
+header #logo {
+    height: 8em;
+    display: block;
+    margin: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    width: 90%;
+    margin-bottom: 2em;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main table {
+    width: 100%;
+    text-align: left;
+}
+
+main table td {
+    font-size: 0.65em
+}
+
+#coming-soon {
+    font-size: 0.75em;
+    text-align: center;
+    padding-top: 2em;
+}
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+}
+
+@media screen and (min-width: 1300px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 15em;
+    }
+
+    main {
+        width: 50%;
+    }
+
+    main table td {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,90 @@
+html, body {
+    margin: auto
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 18px;
+    font-family: 'Bitter', serif;
+
+    color: hsl(0, 0%, 100%);
+    background-color: black;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+    color: hsl(0, 100%, 50%);
+    transition: color 0.75s ease-in;
+}
+
+header {
+    width: 75%;
+}
+
+header #logo {
+    height: 8em;
+    display: block;
+    margin: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    width: 75%;
+    margin-bottom: 2em;
+}
+
+main h2 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+main figure {
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+main figure img {
+    max-height: 10em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.25em;
+}
+
+main figure figcaption {
+    text-align: center;
+    font-size: 0.75em;
+}
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+}
+
+@media screen and (min-width: 1300px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 15em;
+    }
+
+    main figure img {
+        max-height: 20em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.25em;
+    }
+}

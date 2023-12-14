@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salad Daze</title>
+    <link href="../styles/contact.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="../images/logos/sdaze_logo.jpg" alt="Salad Daze logo" id="logo">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../pages/shows.html">Shows</a>
+            <a href="../pages/photos.html">Photos</a>
+            <a href="../pages/music.html">Music</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <form action="./message-sent.html" method="get">
+            <div>
+                <label for="firstname">First:</label>
+                <input type="text" maxlength="50" name="firstname" autofocus placeholder="John">
+            </div>
+            <div>
+                <label for="lastname">Last:</label>
+                <input type="text" maxlength="50" name="lastname" placeholder="Doe">
+            </div>
+            <div>
+                <label for="city">City:</label>
+                <input type="text" maxlength="150" name="city" placeholder="City, State">
+            </div>
+            <div>
+                <label for="city">Message:</label>
+                <textarea maxlength="1000" name="message" placeholder="We'd love to hear what you have to say!"></textarea>
+            </div>
+            <input type="submit" value="Send message" id="submit">
+        </form>
+    </main>
+    <footer>
+        <p>2023 Salad Daze</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+html, body {
+    margin: auto
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 18px;
+    font-family: 'Bitter', serif;
+
+    color: hsl(0, 0%, 100%);
+    background-color: black;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+    color: hsl(0, 100%, 50%);
+    transition: color 0.75s ease-in;
+}
+
+header {
+    width: 75%;
+}
+
+header #logo {
+    height: 8em;
+    display: block;
+    margin: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    width: 75%;
+    margin-bottom: 2em;
+}
+
+main h2 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#music .song {
+    border: 1px solid hsl(0, 0%, 75%);
+    border-radius: 1em;
+    padding: 2em 0.5em 1em 0.5em;
+}
+
+#music .song-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#music .song-info img {
+    height: 8em;
+}
+
+#music .song-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#music .song-links a {
+    padding: 0.5em;
+}
+
+#music .song-links a img {
+    height: 2em;
+}
+
+#music .song-links p {
+    display: none;
+}
+
+#music .song .song-player {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+}
+
+@media screen and (min-width: 1300px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 15em;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #music .song-links a {
+        display: flex;
+        align-items: center;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    #music .song-links p {
+        display: inline;
+        padding-left: 0.5em;
+    }
+}
